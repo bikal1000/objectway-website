@@ -1,0 +1,276 @@
+body,div,h1,h2,h3,h4,h5,h6,p,input,form,figure,img,header,footer,aside,section,article,a,ul,li,button,nav{
+	margin: 0px;
+	padding: 0px;
+}
+/* wholepage */
+.wholepage{
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+}
+/* header */
+.navbar-bg{
+	background: #ffffff;
+	padding: 15px 0;
+	border-top: 4px solid #27b6de;
+	border-bottom: 1px solid #dddddd;
+}
+#header .container{
+	max-width: 1180px;
+	width: 100%;
+}
+.navbar-bg .navbar-nav{
+	margin-left: auto;
+}
+.navbar-bg .navbar-nav li a{
+	font-size: 15px;
+	color: #777777;
+	font-weight: 400;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	position: relative;
+	display: inline-block;
+}
+.navbar-bg .navbar-nav li.active a{
+	color: #000;
+}
+.navbar-bg .navbar-nav li a::before{
+    content: "";
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    border-top: 2px solid #888;
+    border-left: 2px solid #888;
+    transform: rotate(225deg);
+    position: absolute;
+    left: calc(50% - 7px);
+    top: -22px;
+    opacity: 0;
+}
+.navbar-bg .navbar-nav li.active a::before{
+	opacity: 1;
+}
+.navbar-bg .navbar-nav li{
+	margin-right: 45px;
+}
+.navbar-bg .navbar-nav li:last-child{
+	margin-right: 0px;
+
+}
+
+/*services banner*/
+.services-banner{
+	background:#ef5d5e;
+	width: 100%;
+	height: 100px; 
+}
+.services-banner h1{
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	padding-left: 107px;
+	padding-top: 25px;
+
+}
+/* footer start */
+#footer{
+	padding: 50px 0;
+	background: #27b6de;
+	color: white;
+}
+#footer a{
+	color: white;
+}
+/* footer end */
+
+
+
+/*services tab start*/
+.tabbable{
+	margin-top: 70px;
+	padding-left: 80px;
+	padding-right: 80px;
+	text-align: center;
+
+}
+.images{
+	align-items: flex-end;
+}
+.images img{
+	width: 135px;
+    height: 99px;
+    object-fit: contain;
+    object-position: center;
+    padding-bottom: 10px;   
+}
+.images li a{
+	font-size: 14px;
+	border-bottom: 3px solid black;
+	display: block;
+}
+.tab-content{
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+.fade{
+	margin-top: 30px;
+}
+.images li a{
+	color: black;
+	transition: all 0.3s;
+}
+.images li a:hover, .images li a.active{
+	text-decoration: unset;
+	color: red;
+	border-color: red;
+}
+.images li a span{
+	display: flex;
+	min-height: 42px;
+	align-items: flex-end;
+	justify-content: center;
+}
+/*services tab end*/
+
+
+
+
+
+
+/*contact page start */
+.contact-page{
+
+}
+.contact-page form-group{
+	font-family: 'Lato', sans-serif;
+
+}
+.contact-page button{
+	margin-bottom: 30px;
+	margin-left: 50%;
+	width: 100px;
+}
+.contact-page .form-group label:first-child{
+	margin-top: 30px;
+}
+.contact-page input{
+	background:#e7eff2;
+}
+/*contact page end */
+
+/*about us start */
+.content{
+	font-family: 'Lato', sans-serif;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	font-size: 15px;
+	line-height: 30px;
+}
+.content p{
+	margin-left: 60px;
+
+}
+.content ul{
+	margin-left: 90px;
+}
+.content span{
+	color: #27b6de;
+}
+/*about us end */
+
+/*responsive for header and footer*/
+@media(max-width: 767px){
+	.hamspan{
+		display: block;
+		height: 4px;
+		width: 30px;
+		margin: 0 auto;
+		background: #000;
+	}
+	.hamspan + .hamspan{
+		margin-top: 5px;
+	}
+	.navbar-bg .navbar-nav li{
+		margin-right: 0px;
+	}
+	.navbar-bg{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.navbar-bg .navbar-nav li a::before{
+		display: none;
+	}
+	.navbar-bg .navbar-nav li+li{
+		margin-top: 10px;
+	}
+
+	.footer.row > div{
+		margin-bottom: 25px;
+	}
+	.service-details h3{
+		font-size: 18px;
+	}
+	.service-section{
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.service-details{
+		text-align: center;
+	}
+	#footer{
+		text-align: center;
+	}
+}
+
+/*responsive for services*/
+
+@media(max-width: 991px){
+  .images{
+	align-items: flex-end;
+}
+.images img{
+	width: 90px;
+    height: 99px;
+    object-fit: contain;
+    object-position: center;
+    padding-bottom: 10px;   
+	}
+	.images li a{
+	font-size: 10px;
+	border-bottom: 3px solid black;
+	display: block;
+}
+.tab-content{
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	margin-bottom: 50px;
+}
+.fade{
+	margin-top: 30px;
+}
+.col-self-4{
+		flex: 1 1 20%;
+}
+
+
+/*responsive for banner*/
+@media(max-width: 575px){
+	.services-banner h1
+	{
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	padding-left: 29px;
+	padding-top: 25px;
+	}
+
+	.contact-page .submit-button{
+		margin-left: 140px;
+	}
+}
+
+
+
